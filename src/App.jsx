@@ -2,6 +2,11 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Movielist from './MovieCard'
+
+class Detial{
+  Name = "Mark"
+}
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,9 +32,19 @@ function App() {
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
+        <App2 />
+        <Movielist display="what"  display2="test" todo="amsd"/>
       </p>
     </>
   )
 }
 
+function App2(){
+  return(
+    <>
+      <h1 className="hig">Hellow World</h1>
+    </>
+  )
+
+}
 export default App
